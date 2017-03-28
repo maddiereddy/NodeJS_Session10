@@ -1,0 +1,26 @@
+//- 
+  Contacts page, gets title from the index.js file
+  Contains a form in which user can enter their first name, last name and email
+
+extends layout
+
+block content
+  h1= title
+  h3 Welcome to #{title}
+  br
+  p To contact me:
+  p Email: maddiereddy@gmail.com
+  br
+  form(name="userDetails", method="post")
+    div.input
+        span.label First Name
+        input(type="text", name="firstname")
+    div.input
+        span.label Last Name
+        input(type="text", name="lastname")
+    div.input
+        span.label Email
+        input(type="text", name="email")    
+    br    
+    div.actions
+        input(type="submit", value="Submit")

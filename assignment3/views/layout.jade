@@ -1,0 +1,21 @@
+//-
+  Is a template layout for each page
+
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      nav
+        ul
+          li 
+            a(href="/") Home
+          li 
+            a(href="/about") About Us
+          li 
+            a(href="/contact") Contact Us
+    section#wrapper
+        block content
+        
